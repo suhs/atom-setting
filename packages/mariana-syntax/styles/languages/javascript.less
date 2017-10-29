@@ -1,0 +1,95 @@
+.syntax--js {
+    .syntax--constant {
+        color: @very-light-gray;
+    }
+
+    .syntax--support {
+        &.syntax--variable {
+            &.syntax--property {
+                color: @very-light-gray;
+            }
+            &.syntax--property.syntax--dom {
+                color: @blue;
+            }
+        }
+    }
+
+    .syntax--extends.syntax--class,
+    .syntax--type.syntax--class {
+      color: @purple;
+      font-style: italic;
+    }
+
+    .syntax--keyword {
+      color: @strong-orange;
+    }
+
+    .syntax--entity {
+        &.syntax--name {
+            &.syntax--type {
+                color: @orange;
+            }
+        }
+    }
+
+    .syntax--variable {
+        &.syntax--property {
+            color: @very-light-gray;
+        }
+        &.syntax--other.syntax--object {
+            color: @very-light-gray;
+        }
+        &.syntax--other.syntax--object.syntax--property {
+            color: @very-light-gray;
+        }
+    }
+
+    .syntax--string.syntax--quoted.syntax--template {
+      .syntax--other.syntax--object.syntax--property {
+          color: @green;
+      }
+    }
+
+    .syntax--constant {
+        &.syntax--numeric {
+            color: @strong-orange;
+        }
+
+        &.syntax--boolean {
+            color: @red;
+        }
+    }
+
+    .syntax--punctuation.syntax--begin,
+    .syntax--punctuation.syntax--end,
+    .syntax--delimiter.syntax--object.syntax--comma,
+    .syntax--brace.syntax--curly {
+        color: @very-light-gray;
+    }
+
+    .syntax--class.syntax--punctuation.syntax--begin,
+    .syntax--class.syntax--punctuation.syntax--end,
+    .syntax--class.syntax--delimiter.syntax--object.syntax--comma,
+    .syntax--class.syntax--brace.syntax--curly {
+        color: @teal;
+    }
+
+    .syntax--method {
+
+      .syntax--entity.syntax--name.syntax--function {
+        color: @teal;
+      }
+      .syntax--brace.syntax--round {
+        color: @teal;
+      }
+    }
+
+    .syntax--jsx.syntax--attribute-name {
+      color: @purple;
+      font-style: italic !importan  t;
+    }
+
+    .syntax--export .syntax--variable.syntax--default {
+        color: @purple;
+    }
+}
